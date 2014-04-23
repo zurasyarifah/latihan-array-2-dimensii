@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int A[3][3];
+	int B[3][3];
+	int hasil[3][3];
+	int x,y;
+
+	cout<<"Matriks A: "<<endl;
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			cout<<"Elemen ke"<<x<<" , "<<y<<" = ";
+			cin>>A[x][y];
+		}
+	}
+	cout<<"Matriks B: "<<endl;
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			cout<<"Elemen ke-"<<x<<" , "<<y<<" = ";
+			cin>>B[x][y];
+		}
+	}
+
+	cout<<"Matriks A: "<<endl<<endl;
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			cout<<A[x][y];
+		}
+		cout<<endl;
+	}
+
+	cout<<endl;
+
+	cout<<"Matriks B: "<<endl<<endl;
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			cout<<B[x][y];
+		}
+		cout<<endl;
+	}
+
+	cout<<"Hasil matriks penjumlahan: "<<endl;
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			hasil[x][y]=A[x][y] + B[x][y];
+		}
+	}
+	for (x=0;x<3;x++)
+	{
+		for (y=0;y<3;y++)
+		{
+			cout<<hasil[x][y];
+		}
+		cout<<endl;
+	}
+}
